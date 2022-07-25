@@ -1,0 +1,25 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid #6d6666;
+}
+
+.input_row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* padding: .5rem; */
+    /* border: 1px solid #6d6666; */
+}
+
+.input_row label {
+    margin: .5rem;
+}
+
+.input_row input {
+    width: 60%;
+}
