@@ -6,7 +6,7 @@ hourly = document.getElementById('hourly'),
 hourspw = document.getElementById('hours_pw');
 
 annual.addEventListener('keyup', () => {
-    monthly.value = annual.value / 12;
+    monthly.value = Math.round(annual.value / 12);
     weekly.value = Math.round(annual.value / 52);
     daily.value = ((annual.value / 52) / 5).toFixed(2);
     hourly.value = ((annual.value / 52) / hourspw.value).toFixed(2);
