@@ -31,15 +31,22 @@ main {
 }
 
 .title {
-    font-weight: 600;
-    font-size: 1.5rem;
     padding: 1rem .5rem 1.5rem;
+    text-align: center;
+}
+
+.title span:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: .4rem;
 }
 
 .input_row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* flex-wrap: wrap; */
     width: 100%;
     padding: .3rem;
     border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -54,7 +61,6 @@ main {
 .input_row label {
     padding: .8rem 0;
     font-size: 15px;
-    font-weight: 500;
     width: 100%;
     margin: 0 .5rem 0;
 }
@@ -89,6 +95,7 @@ input[type=number] {
 
 .input_row span {
     margin: 0 .8rem 0 .5rem;
+    font-size: 15px;
 }
 
 .buttons {
@@ -98,6 +105,7 @@ input[type=number] {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: .5rem;
 }
 
 .buttons button {
@@ -105,4 +113,14 @@ input[type=number] {
     outline: none;
     cursor: pointer;
     padding: .5rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.buttons button:hover {
+    background: rgba(0,0,0,0.1);
 }

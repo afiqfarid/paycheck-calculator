@@ -3,7 +3,9 @@ monthly = document.getElementById('monthly'),
 weekly = document.getElementById('weekly'),
 daily = document.getElementById('daily'),
 hourly = document.getElementById('hourly'),
-hourspw = document.getElementById('hours_pw');
+hourspw = document.getElementById('hours_pw'),
+inputs = document.querySelectorAll('.input'),
+redoBtn = document.getElementById('redo-btn');
 
 annual.addEventListener('keyup', () => {
     monthly.value = Math.round(annual.value / 12);
@@ -42,4 +44,10 @@ hourly.addEventListener('keyup', () => {
 
 hourspw.addEventListener('keyup', () => {
     hourly.value = (weekly.value / hourspw.value).toFixed(2);
+});
+
+redoBtn.addEventListener('click', () => {
+    inputs.forEach(input => {
+        input.value = '';
+    });
 });

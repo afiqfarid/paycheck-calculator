@@ -7,6 +7,9 @@
     <title>Paycheck Calculator</title>
 
     <link rel="stylesheet" href="assets/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
 
@@ -14,40 +17,41 @@
         <div class="container">
 
             <div class="title">
-                Paycheck Calculator
+                <span>Paycheck Calculator</span>
+                <span>by <a href="https://afiqfarid.com/" target="_blank">Afiq Farid</a></span>
             </div>
 
             <div class="input_row">
                 <label for="annual">Annual Salary</label>
-                <input type="number" name="annual" id="annual">
+                <input type="number" name="annual" id="annual" class="input">
                 <span>RM</span>
             </div>
 
             
             <div class="input_row">
                 <label for="monthly">Monthly Wage</label>
-                <input type="number" name="monthly" id="monthly">
+                <input type="number" name="monthly" id="monthly" class="input">
                 <span>RM</span>
             </div>
 
             
             <div class="input_row">
                 <label for="weekly">Weekly Wage</label>
-                <input type="number" name="weekly" id="weekly">
+                <input type="number" name="weekly" id="weekly" class="input">
                 <span>RM</span>
             </div>
 
             
             <div class="input_row">
                 <label for="daily">Daily Wage</label>
-                <input type="number" name="daily" id="daily">
+                <input type="number" name="daily" id="daily" class="input">
                 <span>RM</span>
             </div>
 
             
             <div class="input_row">
                 <label for="hourly">Hourly Wage</label>
-                <input type="number" name="hourly" id="hourly">
+                <input type="number" name="hourly" id="hourly" class="input">
                 <span>RM</span>
             </div>
 
@@ -59,8 +63,12 @@
             </div>
 
             <div class="buttons">
-                
-            <button>info</button>
+                <button>
+                    <i class='bx bx-redo' id="redo-btn"></i>
+                </button>
+                <button>
+                    <i class='bx bx-info-circle'></i>
+                </button>
             </div>
         </div>
 
