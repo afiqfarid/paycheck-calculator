@@ -50,4 +50,5 @@ redoBtn.addEventListener('click', () => {
     inputs.forEach(input => {
         input.value = '';
     });
+    hourspw.value = 40;
 });

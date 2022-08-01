@@ -11,7 +11,9 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .container {
@@ -23,7 +25,7 @@ main {
     align-items: center;
     border: 1px solid #f0f0f0;
     border-radius: .5rem;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+    box-shadow: 0px 19px 23px 1px rgb(0 0 0 / 8%);
     overflow: hidden;
     padding: 1rem 1.5rem;
     color: #404040;
@@ -40,6 +42,10 @@ main {
     font-weight: 600;
     display: block;
     margin-bottom: .4rem;
+}
+
+.title a {
+    color:#1e90ff;
 }
 
 .input_row {
@@ -109,6 +115,7 @@ input[type=number] {
 }
 
 .buttons button {
+    background: #f0f0f0;
     border: none;
     outline: none;
     cursor: pointer;
@@ -123,4 +130,25 @@ input[type=number] {
 
 .buttons button:hover {
     background: rgba(0,0,0,0.1);
+}
+
+.mode_btns {
+    margin: 0 .8rem;
+    color: #404040;
+    overflow: visible;
+    /* background-color: #1e90ff; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: .5rem;
+    max-width: 463px;
+}
+
+.mode_btns button {
+    min-width: 463px;
+    background-color: #fff;
+    border: none;
+    display: inline-flex;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0px 19px 23px 1px rgb(0 0 0 / 8%);
 }
